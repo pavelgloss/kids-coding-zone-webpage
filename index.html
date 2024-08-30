@@ -7,9 +7,13 @@
     <title>Kids Coding Zone - Learn Real Programming</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+        }
+        pre[class*="language-"] {
+            font-size: 14px;
         }
     </style>
 </head>
@@ -107,30 +111,33 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li class="text-lg">Real programming language - no Scratch, but simplified JavaScript-based
-                            framework</li>
+                        <li class="text-lg">Real programming language - no Scratch, but simplified JavaScript-based framework</li>
                         <li class="text-lg">No need to type everything manually - use prepared text blocks</li>
                         <li class="text-lg">Emphasis on trial and error - write code and immediately see results</li>
                         <li class="text-lg">Interactive platform similar to Scratch, but with actual coding</li>
-                        <li class="text-lg">Learn critical thinking and computer science skills essential for the modern
-                            world</li>
+                        <li class="text-lg">Learn critical thinking and computer science skills essential for the modern world</li>
                     </ul>
                 </div>
                 <div>
                     <p class="text-lg mb-4">Example of our code:</p>
-                    <pre class="bg-gray-100 p-4 rounded-lg text-sm">
-a = image("apple")
-a.move(100)
-                    </pre>
+                    <div class="flex flex-col md:flex-row items-start">
+                        <pre class="language-javascript w-full md:w-1/2 bg-gray-100 p-4 rounded-lg text-sm mr-0 md:mr-4 mb-4 md:mb-0"><code>
+backdropColor("pink")
+image("puppy")
+
+apple = image("apple")
+apple.rotate(45)
+apple.move(100)</code></pre>
+                        <img src="https://placehold.co/400x300" alt="Code Output" class="w-full md:w-1/2 h-auto rounded-lg shadow-md">
+                    </div>
                     <p class="text-lg mt-4">This code is immediately interpreted and visually rendered!</p>
                 </div>
             </div>
             <div class="mt-8">
                 <h3 class="text-2xl font-bold text-green-600 mb-4">Our Custom-Built Platform</h3>
-                <img src="kidscoding1.jpg" alt="Kids Coding Zone Platform Screenshot"
-                    class="rounded-lg shadow-md w-full">
-                <p class="text-lg mt-4">Experience our unique platform that makes learning real programming fun and
-                    interactive!</p>
+                <img src="kidscoding1.jpg" alt="Kids Coding Zone Platform Screenshot" 
+                class="rounded-lg shadow-md w-full">
+                <p class="text-lg mt-4">Experience our unique platform that makes learning real programming fun and interactive!</p>
             </div>
         </section>
 
@@ -191,6 +198,10 @@ a.move(100)
         window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <!-- Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
 </body>
 
 </html>
